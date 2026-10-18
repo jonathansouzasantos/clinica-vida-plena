@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sobre o desenvolvimento do portal acadêmico Clínica Vida Plena.">
+  <title>Sobre e contato | Clínica Vida Plena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Clínica Vida Plena, página inicial">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>
+          vida<span class="brand-accent">plena</span>
+          <small>Saúde e diagnóstico</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="detalhes.html">Serviços e horários</a>
+        <a href="cadastro.html">Agendamento</a>
+        <a href="contato.html" class="active" aria-current="page">Contato</a>
+      </nav>
+
+      <a class="header-cta" href="cadastro.html">
+        Agendar atendimento <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="contact-stage" aria-label="Perfil do criador do portal">
+      <article class="profile-card">
+        <div class="profile-top">
+          <div class="profile-photo-wrap">
+            <img
+              src="assets/perfil.svg"
+              alt="Avatar ilustrativo do desenvolvedor Jonathan Souza"
+              width="132"
+              height="132"
+              class="profile-photo"
+            >
+          </div>
+
+          <span class="profile-tag">DESENVOLVIMENTO FRONT-END</span>
+          <h1>Jonathan Souza</h1>
+          <p class="profile-role">Projeto acadêmico · Clínica Vida Plena</p>
+          <p class="profile-bio">
+            Interface desenvolvida com HTML5 semântico, CSS3 responsivo e JavaScript puro,
+            aplicando princípios de usabilidade e Design Thinking.
+          </p>
+        </div>
+
+        <div class="profile-socials" aria-label="Tecnologias utilizadas e links externos">
+          <a
+            href="https://github.com/jonathansouzasantos"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir perfil de Jonathan Souza no GitHub em nova aba"
+            title="GitHub"
+          >
+            <i class="devicon-github-original" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir documentação HTML5 em nova aba"
+            title="HTML5"
+          >
+            <i class="devicon-html5-plain" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir documentação CSS3 em nova aba"
+            title="CSS3"
+          >
+            <i class="devicon-css3-plain" aria-hidden="true"></i>
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir documentação JavaScript em nova aba"
+            title="JavaScript"
+          >
+            <i class="devicon-javascript-plain" aria-hidden="true"></i>
+          </a>
+        </div>
+
+        <div class="profile-actions">
+          <a
+            href="mailto:jonathanss001@gmail.com?subject=Contato%20sobre%20o%20portal%20Cl%C3%ADnica%20Vida%20Plena"
+            class="btn btn-primary"
+          >
+            Enviar e-mail <span aria-hidden="true">↗</span>
+          </a>
+          <a href="index.html" class="btn btn-outline">Voltar ao início</a>
+        </div>
+
+        <p class="contact-disclaimer">
+          O botão abre seu aplicativo de e-mail para enviar uma mensagem a jonathanss001@gmail.com.
+        </p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Clínica Vida Plena · Projeto acadêmico demonstrativo.</p>
+      <p>HTML5 · CSS3 · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
+
+

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Serviços, dados operacionais e informações de atendimento da Clínica Vida Plena.">
+  <title>Serviços e horários | Clínica Vida Plena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Clínica Vida Plena, página inicial">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>
+          vida<span class="brand-accent">plena</span>
+          <small>Saúde e diagnóstico</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="detalhes.html" class="active" aria-current="page">Serviços e horários</a>
+        <a href="cadastro.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <a class="header-cta" href="cadastro.html">
+        Agendar atendimento <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="page-banner" aria-labelledby="page-title">
+      <div class="container">
+        <span class="section-label">SERVIÇOS E FUNCIONAMENTO</span>
+        <h1 id="page-title">
+          Informação clara.<br>
+          <span>Atendimento bem planejado.</span>
+        </h1>
+        <p>
+          Esta página utiliza os dados do cenário acadêmico da Clínica Vida Plena para apresentar
+          serviços, demanda de exames e horário de funcionamento.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-pad" aria-labelledby="proposal-heading">
+      <div class="container details-layout">
+        <div>
+          <span class="section-label">CENÁRIO DA CLÍNICA</span>
+          <h2 id="proposal-heading">Consultas e diagnóstico por imagem integrados.</h2>
+          <p class="body-lead">
+            O portal foi pensado para reduzir dúvidas antes do atendimento e destacar as informações
+            que o usuário procura primeiro.
+          </p>
+
+          <dl class="feature-list">
+            <div>
+              <dt>Funcionamento</dt>
+              <dd>06h às 21h no cenário acadêmico do projeto.</dd>
+            </div>
+            <div>
+              <dt>Demanda de exames</dt>
+              <dd>120 exames por dia, considerando radiografia, ultrassonografia e tomografia.</dd>
+            </div>
+            <div>
+              <dt>Período de maior movimento</dt>
+              <dd>09h às 11h, utilizado no projeto como referência de pico operacional.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="video-card">
+          <div class="video-shell">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/xRwizFjBWRA"
+              title="Vídeo externo explicativo sobre tomografia computadorizada"
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <p class="video-caption">
+            Mídia externa relacionada ao serviço de tomografia. A reprodução depende da disponibilidade do YouTube.
+            <a href="https://www.youtube.com/watch?v=xRwizFjBWRA" target="_blank" rel="noopener noreferrer">Abrir vídeo em nova aba ↗</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad soft-section" id="tabela" aria-labelledby="table-heading">
+      <div class="container">
+        <span class="section-label">DADOS ESTRUTURADOS</span>
+        <h2 id="table-heading">Serviços e demanda do cenário.</h2>
+        <p class="section-intro">
+          Os números abaixo pertencem ao cenário acadêmico da Clínica Vida Plena e servem para
+          contextualizar a interface, não como divulgação de uma clínica real em funcionamento.
+        </p>
+
+        <div class="table-scroll" role="region" aria-label="Tabela de serviços; role horizontalmente para ver todas as colunas" tabindex="0">
+          <table>
+            <caption>Quadro acadêmico de serviços e volume diário</caption>
+            <thead>
+              <tr>
+                <th scope="col">Serviço</th>
+                <th scope="col">Volume diário</th>
+                <th scope="col">Funcionamento</th>
+                <th scope="col">Forma de acesso</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="consultas">
+                <th scope="row">Consultas médicas</th>
+                <td>Conforme agenda</td>
+                <td>06h às 21h</td>
+                <td>Agendamento</td>
+              </tr>
+              <tr id="radiografia">
+                <th scope="row">Radiografia (RX)</th>
+                <td>60 exames/dia</td>
+                <td>06h às 21h</td>
+                <td>Agendamento</td>
+              </tr>
+              <tr id="ultrassonografia">
+                <th scope="row">Ultrassonografia (USG)</th>
+                <td>35 exames/dia</td>
+                <td>06h às 21h</td>
+                <td>Agendamento</td>
+              </tr>
+              <tr id="tomografia">
+                <th scope="row">Tomografia (TC)</th>
+                <td>25 exames/dia</td>
+                <td>06h às 21h</td>
+                <td>Agendamento</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="indicators" aria-label="Distribuição dos exames diários">
+          <article class="indicator">
+            <div class="indicator-head">
+              <span>Radiografia</span>
+              <strong>50%</strong>
+            </div>
+            <div class="progress-row">
+              <progress aria-label="Participação de radiografia no total diário de exames" value="60" max="120">60 de 120 exames</progress>
+              <span>60 / 120</span>
+            </div>
+          </article>
+
+          <article class="indicator">
+            <div class="indicator-head">
+              <span>Ultrassonografia</span>
+              <strong>29%</strong>
+            </div>
+            <div class="progress-row">
+              <progress aria-label="Participação de ultrassonografia no total diário de exames" value="35" max="120">35 de 120 exames</progress>
+              <span>35 / 120</span>
+            </div>
+          </article>
+
+          <article class="indicator">
+            <div class="indicator-head">
+              <span>Tomografia</span>
+              <strong>21%</strong>
+            </div>
+            <div class="progress-row">
+              <progress aria-label="Participação de tomografia no total diário de exames" value="25" max="120">25 de 120 exames</progress>
+              <span>25 / 120</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="tiny-note">
+          Percentuais arredondados a partir da distribuição de 120 exames/dia do cenário acadêmico.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Clínica Vida Plena · Projeto acadêmico demonstrativo.</p>
+      <p>HTML5 · CSS3 · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

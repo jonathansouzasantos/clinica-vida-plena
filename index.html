@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portal acadêmico da Clínica Vida Plena: consultas e serviços de diagnóstico por imagem.">
+  <title>Início | Clínica Vida Plena</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Clínica Vida Plena, página inicial">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span>
+          vida<span class="brand-accent">plena</span>
+          <small>Saúde e diagnóstico</small>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="site-nav"
+      >☰</button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Navegação principal">
+        <a href="index.html" class="active" aria-current="page">Início</a>
+        <a href="detalhes.html">Serviços e horários</a>
+        <a href="cadastro.html">Agendamento</a>
+        <a href="contato.html">Contato</a>
+      </nav>
+
+      <a class="header-cta" href="cadastro.html">
+        Agendar atendimento <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <span class="eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Clínica Vida Plena
+          </span>
+
+          <h1 id="hero-title">
+            Cuidado próximo.<br>
+            <span>Diagnóstico com confiança.</span>
+          </h1>
+
+          <p>
+            Um portal acadêmico inspirado no cenário da Clínica Vida Plena, com acesso rápido
+            aos principais serviços de consultas e diagnóstico por imagem.
+          </p>
+
+          <div class="hero-actions">
+            <a href="cadastro.html" class="btn btn-primary">
+              Solicitar agendamento <span aria-hidden="true">→</span>
+            </a>
+            <a href="detalhes.html" class="btn btn-outline">Conhecer os serviços</a>
+          </div>
+
+          <div class="hero-proof" aria-label="Destaques do atendimento">
+            <div class="avatars" aria-hidden="true">
+              <span>RX</span>
+              <span>US</span>
+              <span>TC</span>
+            </div>
+            <span>
+              Atendimento integrado<br>
+              <strong>consultas + diagnóstico por imagem</strong>
+            </span>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <img
+            src="assets/clinica.svg"
+            alt="Ilustração de um ambiente acolhedor de atendimento da Clínica Vida Plena"
+            width="620"
+            height="520"
+          >
+
+          <div class="floating-card">
+            <span class="floating-icon" aria-hidden="true">♡</span>
+            <span>
+              <strong>Experiência humanizada</strong>
+              <small>Informação clara e jornada simples</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">VITRINE DE SERVIÇOS</span>
+            <h2 id="services-heading">Principais atendimentos da clínica.</h2>
+          </div>
+          <p>
+            Conheça as opções de atendimento e consulte os horários antes de simular sua solicitação.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <article class="service-card">
+            <div class="service-image bg-mint">
+              <img
+                src="assets/consulta.svg"
+                width="360"
+                height="230"
+                alt="Ilustração de uma consulta médica"
+              >
+            </div>
+            <div class="service-content">
+              <span class="card-category">ATENDIMENTO</span>
+              <h3>Consultas médicas</h3>
+              <p>Acompanhamento organizado por agenda, com foco em acolhimento e orientação.</p>
+              <a href="detalhes.html#consultas" class="card-link">
+                Ver informações <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image bg-blue">
+              <img
+                src="assets/radiografia.svg"
+                width="360"
+                height="230"
+                alt="Ilustração representando um exame de radiografia"
+              >
+            </div>
+            <div class="service-content">
+              <span class="card-category">DIAGNÓSTICO</span>
+              <h3>Radiografia</h3>
+              <p>Serviço de imagem presente no cenário acadêmico com maior volume diário de exames.</p>
+              <a href="detalhes.html#radiografia" class="card-link">
+                Ver informações <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image bg-lilac">
+              <img
+                src="assets/ultrassom.svg"
+                width="360"
+                height="230"
+                alt="Ilustração de um exame de ultrassonografia"
+              >
+            </div>
+            <div class="service-content">
+              <span class="card-category">DIAGNÓSTICO</span>
+              <h3>Ultrassonografia</h3>
+              <p>Exames de imagem com fluxo de atendimento simples e orientação no agendamento.</p>
+              <a href="detalhes.html#ultrassonografia" class="card-link">
+                Ver informações <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <div class="service-image bg-peach">
+              <img
+                src="assets/tomografia.svg"
+                width="360"
+                height="230"
+                alt="Ilustração de um equipamento de tomografia computadorizada"
+              >
+            </div>
+            <div class="service-content">
+              <span class="card-category">TECNOLOGIA</span>
+              <h3>Tomografia</h3>
+              <p>Exame de maior volume de dados do cenário, integrado ao fluxo de diagnóstico por imagem.</p>
+              <a href="detalhes.html#tomografia" class="card-link">
+                Ver informações <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="journey section-pad" aria-labelledby="journey-heading">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="section-label">COMO FUNCIONA</span>
+            <h2 id="journey-heading">Seu atendimento em três passos.</h2>
+          </div>
+          <p>
+            A interface prioriza as ações que um paciente precisa encontrar rapidamente:
+            compreender, escolher e solicitar.
+          </p>
+        </div>
+
+        <ol class="journey-grid">
+          <li>
+            <span>01</span>
+            <strong>Entenda</strong>
+            <p>Conheça os principais serviços e informações da clínica.</p>
+          </li>
+          <li>
+            <span>02</span>
+            <strong>Escolha</strong>
+            <p>Consulte horários, demanda do cenário e modalidade de atendimento.</p>
+          </li>
+          <li>
+            <span>03</span>
+            <strong>Solicite</strong>
+            <p>Escolha o serviço e o período para simular sua solicitação.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta-band" aria-label="Chamada para agendamento">
+      <div class="container cta-inner">
+        <div>
+          <span class="section-label light">SEU PRÓXIMO PASSO</span>
+          <h2>Encontre o serviço e solicite seu atendimento.</h2>
+        </div>
+        <a href="cadastro.html" class="btn btn-light">
+          Ir para o formulário <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="current-year">2026</span> Clínica Vida Plena · Projeto acadêmico demonstrativo.</p>
+      <p>HTML5 · CSS3 · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
