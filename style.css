@@ -1204,3 +1204,9 @@ button:disabled { opacity: .65; cursor: not-allowed; }
   .section-pad, .page-banner { padding: 24px 0; }
   .service-card, .profile-card { break-inside: avoid; box-shadow: none; }
 }
+
+/* Rótulos mantêm os links de tecnologia legíveis sem a fonte de ícones. */
+.profile-socials { flex-wrap: wrap; }
+.profile-socials a { width: 78px; height: 68px; align-content: center; gap: 4px; }
+.technology-label { font-size: .7rem; font-weight: 700; line-height: 1.2; }
+.profile-socials i { line-height: 1; }
