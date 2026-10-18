@@ -1,142 +1,43 @@
-# Clínica Vida Plena — Portal Front-end
+# Clínica Vida Plena
 
-Projeto acadêmico desenvolvido com **HTML5, CSS3 e JavaScript puro**, contextualizado no cenário da **Clínica Vida Plena**.
+Portal de uma clínica fictícia para a atividade de Programação Web. O tema reúne consultas e exames de imagem em quatro páginas, com navegação comum e layout adaptado ao celular.
 
-## Objetivo
+- [Abrir o site](https://jonathansouzasantos.github.io/clinica-vida-plena/)
+- [Repositório](https://github.com/jonathansouzasantos/clinica-vida-plena)
 
-Construir um portal com quatro páginas interligadas, semântica HTML5, CSS Grid, Flexbox, formulário validado, tabela, mídia externa, indicadores com `<progress>` e acabamento visual responsivo.
+## Páginas
 
-## Estrutura
+| Arquivo | Conteúdo |
+| --- | --- |
+| index.html | Apresentação da clínica e cards dos serviços |
+| detalhes.html | Horários, tabela de serviços, vídeo e distribuição dos exames |
+| cadastro.html | Simulação de solicitação de atendimento |
+| contato.html | Foto, apresentação e contato do autor |
 
-```text
-vida-plena-portal-melhorado/
-├── index.html
-├── detalhes.html
-├── cadastro.html
-├── contato.html
-├── style.css
-├── script.js
-├── README.md
-└── assets/
-    ├── clinica.svg
-    ├── consulta.svg
-    ├── perfil.svg
-    ├── radiografia.svg
-    ├── tomografia.svg
-    └── ultrassom.svg
-```
+O style.css reúne os estilos das quatro páginas. O script.js controla o menu do celular, o ano do rodapé e a simulação do formulário. As imagens estão na pasta assets.
 
-## Mapeamento direto para a atividade
+## Recursos utilizados
 
-### Página 1 — `index.html`
-- `<article>` para cada card.
-- Imagens com `src`, `alt`, `width` e `height`.
-- CSS Grid em `.card-grid`.
-- `border-radius`, `box-shadow` e `:hover` com `transform: scale(...)`.
-- Vitrine com consultas, radiografia, ultrassonografia e tomografia.
+- HTML5: header, nav, main, section, article, tabela, formulário e listas de definição.
+- CSS Grid na vitrine e Flexbox no cabeçalho, nos indicadores e no cartão de contato.
+- Media queries para adaptar o layout às telas menores.
+- Campos com label, required e tipos adequados; radios agrupados pelo mesmo name.
+- Destaque da página atual, foco pelo teclado e transições nos cards e botões.
+- Vídeo do YouTube incorporado com iframe e indicadores com progress.
 
-### Página 2 — `detalhes.html`
-- Vídeo externo incorporado com `<iframe>`.
-- Tabela semântica com `<table>`, `<caption>`, `<thead>`, `<tbody>`, `<tr>`, `<th>` e `<td>`.
-- `border-collapse: collapse` no CSS.
-- Linhas zebradas e destaque no `:hover`.
-- `<dl>`, `<dt>` e `<dd>` para dados do cenário.
-- Indicadores com `<progress>` e `<span>`, alinhados com Flexbox.
+## Como abrir
 
-### Página 3 — `cadastro.html`
-- `<form>` dividido com `<fieldset>` e `<legend>`.
-- `type="text"` e `type="email"` com `placeholder` e `required`.
-- `<select>` e `<option>`.
-- Radios agrupados pelo mesmo `name="turno"`.
-- Todos os inputs possuem `<label>` associado ao respectivo `id`.
-- Estilização `:focus` e botão `type="submit"`.
-- JavaScript intercepta a simulação e fornece feedback ao usuário sem armazenar dados.
+Acesse o site pelo link acima. Para executar a cópia local, abra a pasta no Visual Studio Code e use a extensão Live Server em index.html. Não há instalação de pacotes nem etapa de compilação.
 
-### Página 4 — `contato.html`
-- Profile card centralizado com Flexbox.
-- `min-height: calc(100vh - ...)`.
-- Imagem de perfil circular com `border-radius: 50%` e `object-fit: cover`. Foto pública do perfil GitHub do autor, incorporada ao arquivo local assets/perfil.svg.
-- Ícones de tecnologias via Devicon.
-- Links externos com `target="_blank"` e `rel="noopener noreferrer"`.
-- Contato rápido com `mailto:`.
+O player do YouTube, as fontes do Google e os ícones Devicon dependem de internet. As imagens do projeto estão incluídas em assets. O vídeo pode não funcionar quando o HTML é aberto diretamente como arquivo local.
 
-## Coerência com o cenário Vida Plena
+## Sobre a demonstração
 
-A interface utiliza informações do projeto acadêmico:
-- funcionamento de 06h às 21h;
-- 120 exames/dia no cenário;
-- radiografia: 60 exames/dia;
-- ultrassonografia: 35 exames/dia;
-- tomografia: 25 exames/dia;
-- pico operacional de 09h às 11h.
+A clínica, seus horários e os volumes de atendimento fazem parte do cenário acadêmico. O formulário valida os campos e mostra uma mensagem na própria página: não envia dados, não salva solicitações e não realiza agendamentos reais. Para experimentar, use dados fictícios.
 
-Esses dados são apresentados como **cenário acadêmico**, e não como divulgação de uma clínica real.
+A imagem da fachada foi gerada por inteligência artificial e representa uma clínica conceitual. Essa informação também aparece na página inicial. A foto do autor é a mesma utilizada em seu perfil público do GitHub. As fotografias estão incorporadas em arquivos SVG locais.
 
-## Design Thinking aplicado
+## Contato
 
-A interface foi organizada a partir de uma jornada simples:
-1. **Entender** os serviços disponíveis;
-2. **Escolher** o atendimento adequado;
-3. **Solicitar** o atendimento com poucos campos.
-
-Isso reduz carga cognitiva, melhora a hierarquia visual e mantém as principais ações facilmente identificáveis.
-
-## Executar
-
-Abra `index.html` diretamente no navegador ou utilize a extensão **Live Server** no Visual Studio Code.
-
-## Publicar no GitHub
-
-```bash
-git init
-git add .
-git commit -m "feat: cria portal front-end da Clinica Vida Plena"
-git branch -M main
-git remote add origin https://github.com/jonathansouzasantos/clinica-vida-plena.git
-git push -u origin main
-```
-
-O repositório deve permanecer **público** e o arquivo principal deve continuar com o nome `index.html`.
-
-## Observação acadêmica
-
-O formulário é apenas demonstrativo. Nenhum dado é persistido e nenhum agendamento real é efetuado.
-
-## Revisão de 18/10/2026
-
-- Menu móvel com Escape, fechamento ao clicar fora e alternativa sem JavaScript.
-- Links da vitrine direcionados às linhas correspondentes da tabela.
-- Indicadores com nomes acessíveis e tabela navegável pelo teclado.
-- Formulário rejeita nomes compostos apenas por espaços, limpa feedback antigo e respeita movimento reduzido.
-- Sem JavaScript, o envio permanece desativado para evitar uma submissão acidental.
-- Melhorias de contraste, foco, alinhamento dos cards, telas pequenas e impressão.
-
-## Repositório e autoria
-
-- Repositório público: https://github.com/jonathansouzasantos/clinica-vida-plena
-- Autor: Jonathan Souza
-- Perfil GitHub: https://github.com/jonathansouzasantos
-- Contato: jonathanss001@gmail.com
-
-O repositório já foi criado e recebeu os arquivos. Alterações locais posteriores precisam ser enviadas ao GitHub para atualizar a versão entregue.
-
-## Execução e dependências
-
-Abra a pasta no Visual Studio Code e use Live Server para acessar index.html por HTTP. Isso permite fornecer ao YouTube o cabeçalho Referer necessário à incorporação. Abrir o HTML diretamente pode impedir a reprodução, mesmo que o vídeo exista.
-
-As ilustrações SVG ficam em assets e acompanham o projeto. As fontes do Google, os ícones Devicon e o player do YouTube dependem de acesso à internet. As fontes têm alternativas do sistema; os links de tecnologias também possuem rótulos visíveis.
-
-## Conferência antes da entrega
-
-- Abrir as quatro páginas em computador e em uma janela estreita (360 a 390 px).
-- Conferir navegação, indicação da página ativa, imagens e rolagem horizontal da tabela.
-- Usar Tab para navegar e Escape para fechar o menu móvel.
-- No formulário, tentar enviar campos vazios e um e-mail inválido; depois simular uma solicitação com dados fictícios válidos.
-- Reproduzir o vídeo em detalhes.html servido por HTTP/HTTPS.
-- Foto do autor: mesma imagem pública do perfil GitHub, incorporada ao projeto com autorização.
-- Enviar os arquivos atualizados ao repositório, mantendo index.html e style.css na raiz e as imagens em assets.
-- Abrir o link público sem login e colar o link do repositório no comentário da atividade.
-
-## Limites da revisão
-
-A checagem automática de estrutura e referências locais não substitui a inspeção visual ou a avaliação do professor. Não há backend: o formulário é uma simulação local, sem envio de solicitações reais. A foto do autor foi atualizada. O site público foi conferido em desktop e em 390 px, incluindo imagens, menu móvel, tabela e simulação do formulário. A reprodução completa do vídeo não foi confirmada.
+Jonathan Souza  
+[GitHub](https://github.com/jonathansouzasantos) · [E-mail](mailto:jonathanss001@gmail.com)
