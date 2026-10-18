@@ -9,7 +9,7 @@ Construir um portal com quatro páginas interligadas, semântica HTML5, CSS Grid
 ## Estrutura
 
 ```text
-vida-plena-portal-revisado/
+vida-plena-portal-melhorado/
 ├── index.html
 ├── detalhes.html
 ├── cadastro.html
@@ -55,7 +55,7 @@ vida-plena-portal-revisado/
 ### Página 4 — `contato.html`
 - Profile card centralizado com Flexbox.
 - `min-height: calc(100vh - ...)`.
-- Foto circular com `border-radius: 50%` e `object-fit: cover`.
+- Imagem de perfil circular com `border-radius: 50%` e `object-fit: cover`. O arquivo atual é um avatar ilustrativo; a foto pessoal ainda precisa ser fornecida.
 - Ícones de tecnologias via Devicon.
 - Links externos com `target="_blank"` e `rel="noopener noreferrer"`.
 - Contato rápido com `mailto:`.
@@ -92,7 +92,7 @@ git init
 git add .
 git commit -m "feat: cria portal front-end da Clinica Vida Plena"
 git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/clinica-vida-plena.git
+git remote add origin https://github.com/jonathansouzasantos/clinica-vida-plena.git
 git push -u origin main
 ```
 
@@ -111,16 +111,32 @@ O formulário é apenas demonstrativo. Nenhum dado é persistido e nenhum agenda
 - Sem JavaScript, o envio permanece desativado para evitar uma submissão acidental.
 - Melhorias de contraste, foco, alinhamento dos cards, telas pequenas e impressão.
 
-### Pendências antes da entrega
+## Repositório e autoria
 
-1. Contato configurado em contato.html: jonathanss001@gmail.com e perfil https://github.com/jonathansouzasantos.
-2. Abrir as quatro páginas no navegador e conferir em desktop e celular. A revisão automatizada foi estática; a inspeção visual foi bloqueada pelo navegador da ferramenta.
-3. Conferir se o vídeo externo continua disponível e permite incorporação.
-4. Criar um repositório público no GitHub e enviar os arquivos desta pasta, com index.html na raiz. O repositório não foi criado nesta revisão.
-5. Abrir o endereço do repositório em uma janela sem login antes de enviar o link ao professor.
+- Repositório público: https://github.com/jonathansouzasantos/clinica-vida-plena
+- Autor: Jonathan Souza
+- Perfil GitHub: https://github.com/jonathansouzasantos
+- Contato: jonathanss001@gmail.com
 
-### Verificação realizada
+O repositório já foi criado e recebeu os arquivos. Alterações locais posteriores precisam ser enviadas ao GitHub para atualizar a versão entregue.
 
-69 verificações estáticas sem erros: referências locais, âncoras, indicação de página ativa, IDs únicos, atributos de imagens e vínculo entre labels e inputs. Sintaxe JavaScript conferida com node --check. Quatro cenários de lógica do formulário passaram em ambiente simulado; isso não substitui testes em navegador.
+## Execução e dependências
 
+Abra a pasta no Visual Studio Code e use Live Server para acessar index.html por HTTP. Isso permite fornecer ao YouTube o cabeçalho Referer necessário à incorporação. Abrir o HTML diretamente pode impedir a reprodução, mesmo que o vídeo exista.
 
+As ilustrações SVG ficam em assets e acompanham o projeto. As fontes do Google, os ícones Devicon e o player do YouTube dependem de acesso à internet. As fontes têm alternativas do sistema; os links de tecnologias também possuem rótulos visíveis.
+
+## Conferência antes da entrega
+
+- Abrir as quatro páginas em computador e em uma janela estreita (360 a 390 px).
+- Conferir navegação, indicação da página ativa, imagens e rolagem horizontal da tabela.
+- Usar Tab para navegar e Escape para fechar o menu móvel.
+- No formulário, tentar enviar campos vazios e um e-mail inválido; depois simular uma solicitação com dados fictícios válidos.
+- Reproduzir o vídeo em detalhes.html servido por HTTP/HTTPS.
+- Substituir assets/perfil.svg por uma foto pessoal fornecida pelo autor e atualizar o src e o alt em contato.html. O avatar permanece identificado como ilustração até essa substituição.
+- Enviar os arquivos atualizados ao repositório, mantendo index.html e style.css na raiz e as imagens em assets.
+- Abrir o link público sem login e colar o link do repositório no comentário da atividade.
+
+## Limites da revisão
+
+A checagem automática de estrutura e referências locais não substitui a inspeção visual ou a avaliação do professor. Não há backend: o formulário é uma simulação local, sem envio de solicitações reais. A foto pessoal e a conferência visual completa ainda estão pendentes.
