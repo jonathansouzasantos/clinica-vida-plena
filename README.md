@@ -55,7 +55,7 @@ vida-plena-portal-melhorado/
 ### Página 4 — `contato.html`
 - Profile card centralizado com Flexbox.
 - `min-height: calc(100vh - ...)`.
-- Imagem de perfil circular com `border-radius: 50%` e `object-fit: cover`. O arquivo atual é um avatar ilustrativo; a foto pessoal ainda precisa ser fornecida.
+- Imagem de perfil circular com `border-radius: 50%` e `object-fit: cover`. Foto pública do perfil GitHub do autor, incorporada ao arquivo local assets/perfil.svg.
 - Ícones de tecnologias via Devicon.
 - Links externos com `target="_blank"` e `rel="noopener noreferrer"`.
 - Contato rápido com `mailto:`.
@@ -133,10 +133,10 @@ As ilustrações SVG ficam em assets e acompanham o projeto. As fontes do Google
 - Usar Tab para navegar e Escape para fechar o menu móvel.
 - No formulário, tentar enviar campos vazios e um e-mail inválido; depois simular uma solicitação com dados fictícios válidos.
 - Reproduzir o vídeo em detalhes.html servido por HTTP/HTTPS.
-- Substituir assets/perfil.svg por uma foto pessoal fornecida pelo autor e atualizar o src e o alt em contato.html. O avatar permanece identificado como ilustração até essa substituição.
+- Foto do autor: mesma imagem pública do perfil GitHub, incorporada ao projeto com autorização.
 - Enviar os arquivos atualizados ao repositório, mantendo index.html e style.css na raiz e as imagens em assets.
 - Abrir o link público sem login e colar o link do repositório no comentário da atividade.
 
 ## Limites da revisão
 
-A checagem automática de estrutura e referências locais não substitui a inspeção visual ou a avaliação do professor. Não há backend: o formulário é uma simulação local, sem envio de solicitações reais. A foto pessoal e a conferência visual completa ainda estão pendentes.
+A checagem automática de estrutura e referências locais não substitui a inspeção visual ou a avaliação do professor. Não há backend: o formulário é uma simulação local, sem envio de solicitações reais. A foto do autor foi atualizada. O site público foi conferido em desktop e em 390 px, incluindo imagens, menu móvel, tabela e simulação do formulário. A reprodução completa do vídeo não foi confirmada.
